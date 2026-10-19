@@ -1,0 +1,16 @@
+# Raw targets never go to git: size, licensing, and secrets in HAR files
+targets/*
+!targets/README.md
+!targets/MANIFEST.csv
+
+# Large or sensitive evidence copies
+investigations/*/evidence/**/*.apk
+investigations/*/evidence/**/*.exe
+investigations/*/evidence/**/*.dll
+investigations/*/evidence/**/*.so
+investigations/*/evidence/**/*.har
+investigations/*/evidence/**/*.gpr
+investigations/*/evidence/**/*.rep/
+
+.DS_Store
+Thumbs.db
